@@ -1,2 +1,2 @@
 # Fulhaus
-Technical Assesment for Fulhaus
+Technical Assessment for Fulhaus
