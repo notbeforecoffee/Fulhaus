@@ -5,7 +5,7 @@ import cors from 'cors';
 import connectDB from "./src/config/dbConnection.js";
 import storeRouter from "./src/routes/storeRouter.js";
 // import contentRouter from "./src/routes/contentRouter.js";
-import errorHandler from "./src/middlewares/errorHandler.js";
+import errorHandler from "./src/middleware/errorHandler.js";
 
 dotenv.config();
 

@@ -1,6 +1,6 @@
 import express from 'express';
-import storeController from '../controllers/storeController';
-import verifyToken from '../middlewares/jwtVerify'
+import storeController from '../controllers/storeController.js';
+
 
 const storeRouter = express.Router();
 
@@ -8,7 +8,7 @@ const storeRouter = express.Router();
 
 storeRouter.get('/', storeController.getAllContent);
 
-storeRouter.post ('/', storeController.addContent)
+storeRouter.post ('/', storeController.newContent)
 
 storeRouter.patch ('/:id', storeController.updateContent)
 

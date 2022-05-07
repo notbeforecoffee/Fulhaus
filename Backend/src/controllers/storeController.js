@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import Content from '../models/Content';
+import Content from '../models/content.js';
 
 dotenv.config();
 

@@ -1,0 +1,31 @@
+/* header styling */
+.header {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index:2;
+    position: fixed;
+    top:0;
+  }
+  .Fulhaus {
+    font-family: 'Manrope';
+    font-size: 1.5rem;;
+  }
+  
+  .cart_btn {
+    margin-left: auto;
+    background-color: #000;
+    color: white;
+    font-size: 1.2rem;
+    width: 5rem;
+    height: 4vh;
+    margin-right: 2rem;
+    border-radius: 0.2rem;
+    border: 0;
+  }
