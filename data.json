@@ -1,0 +1,346 @@
+[
+    {
+        "acronym": "Abbr",
+        "definition": "Abbreviation"
+    },
+    {
+        "acronym": "Abt",
+        "definition": "About"
+    },
+    {
+        "acronym": "Adr",
+        "definition": "Address"
+    },
+    {
+        "acronym": "AFAIK",
+        "definition": "As far as I know"
+    },
+    {
+        "acronym": "AFK",
+        "definition": "Away from keyboard"
+    },
+    {
+        "acronym": "AMA",
+        "definition": "Ask me anything"
+    },
+    {
+        "acronym": "ASAP",
+        "definition": "As soon as possible"
+    },
+    {
+        "acronym": "ATM",
+        "definition": "At the moment"
+    },
+    {
+        "acronym": "BAK",
+        "definition": "Back at keyboard"
+    },
+    {
+        "acronym": "BC, B/C",
+        "definition": "Because"
+    },
+    {
+        "acronym": "Bday/B-Day",
+        "definition": "Birthday"
+    },
+    {
+        "acronym": "BFF(S)",
+        "definition": "Best friend(s) forever"
+    },
+    {
+        "acronym": "BRB",
+        "definition": "Be right back"
+    },
+    {
+        "acronym": "BTW",
+        "definition": "By the way"
+    },
+    {
+        "acronym": "B2B",
+        "definition": "Business to business"
+    },
+    {
+        "acronym": "B2C",
+        "definition": "Business to consumer, business to customer"
+    },
+    {
+        "acronym": "DIY",
+        "definition": "Do it yourself"
+    },
+    {
+        "acronym": "DM",
+        "definition": "Direct message"
+    },
+    {
+        "acronym": "EOD",
+        "definition": "End of the day"
+    },
+    {
+        "acronym": "EOW",
+        "definition": "End of the week"
+    },
+    {
+        "acronym": "ETA",
+        "definition": "Estimated time of arrival"
+    },
+    {
+        "acronym": "Fave/Fav",
+        "definition": "Favorite"
+    },
+    {
+        "acronym": "FAQ",
+        "definition": "Frequently asked question(s)"
+    },
+    {
+        "acronym": "FB",
+        "definition": "Facebook"
+    },
+    {
+        "acronym": "FBF",
+        "definition": "Flashback Friday"
+    },
+    {
+        "acronym": "FOMO",
+        "definition": "Fear of missing out"
+    },
+    {
+        "acronym": "FTW",
+        "definition": "For the win"
+    },
+    {
+        "acronym": "FWIW",
+        "definition": "For what it’s worth"
+    },
+    {
+        "acronym": "FYI",
+        "definition": "For your information"
+    },
+    {
+        "acronym": "GOAT",
+        "definition": "Greatest of all time"
+    },
+    {
+        "acronym": "Gr8",
+        "definition": "Great"
+    },
+    {
+        "acronym": "GTG/G2G",
+        "definition": "Got to go"
+    },
+    {
+        "acronym": "HBD",
+        "definition": "Happy birthday"
+    },
+    {
+        "acronym": "HMU",
+        "definition": "Hit me up"
+    },
+    {
+        "acronym": "ICYMI",
+        "definition": "In case you missed it"
+    },
+    {
+        "acronym": "IDC",
+        "definition": "I don’t care"
+    },
+    {
+        "acronym": "IDK",
+        "definition": "I don’t know"
+    },
+    {
+        "acronym": "IG",
+        "definition": "Instagram"
+    },
+    {
+        "acronym": "IIRC",
+        "definition": "If I recall correctly, if I remember correctly"
+    },
+    {
+        "acronym": "IK",
+        "definition": "I know"
+    },
+    {
+        "acronym": "IKR",
+        "definition": "I know right"
+    },
+    {
+        "acronym": "ILY",
+        "definition": "I love you"
+    },
+    {
+        "acronym": "ILYSM/LYSM",
+        "definition": "I love you so much, love you so much"
+    },
+    {
+        "acronym": "IM",
+        "definition": "Instant message"
+    },
+    {
+        "acronym": "IMO, IMHO",
+        "definition": "In my opinion, in my humble opinion"
+    },
+    {
+        "acronym": "IRL",
+        "definition": "In real life"
+    },
+    {
+        "acronym": "JK",
+        "definition": "Just kidding"
+    },
+    {
+        "acronym": "JW",
+        "definition": "Just wondering"
+    },
+    {
+        "acronym": "LI",
+        "definition": "LinkedIn"
+    },
+    {
+        "acronym": "LMAO",
+        "definition": "Laugh(ing) my a** off"
+    },
+    {
+        "acronym": "LMK",
+        "definition": "Let me know"
+    },
+    {
+        "acronym": "LOL",
+        "definition": "Laugh(ing) out loud"
+    },
+    {
+        "acronym": "Merch",
+        "definition": "Merchandise"
+    },
+    {
+        "acronym": "Msg",
+        "definition": "Message, messages"
+    },
+    {
+        "acronym": "NBD",
+        "definition": "No big deal"
+    },
+    {
+        "acronym": "NP",
+        "definition": "No problem"
+    },
+    {
+        "acronym": "NVM",
+        "definition": "Never mind"
+    },
+    {
+        "acronym": "OFC",
+        "definition": "Of course"
+    },
+    {
+        "acronym": "OMG",
+        "definition": "Oh my gosh, oh my God"
+    },
+    {
+        "acronym": "OMW",
+        "definition": "On my way"
+    },
+    {
+        "acronym": "OTT",
+        "definition": "Over the top"
+    },
+    {
+        "acronym": "PLMK",
+        "definition": "Please let me know"
+    },
+    {
+        "acronym": "Pls",
+        "definition": "Please"
+    },
+    {
+        "acronym": "Ppl",
+        "definition": "People"
+    },
+    {
+        "acronym": "ROFL",
+        "definition": "Rolling on the floor laughing"
+    },
+    {
+        "acronym": "SC",
+        "definition": "Snapchat"
+    },
+    {
+        "acronym": "SMH",
+        "definition": "Shake(ing) my head"
+    },
+    {
+        "acronym": "Srsly",
+        "definition": "Seriously"
+    },
+    {
+        "acronym": "TBH",
+        "definition": "To be honest"
+    },
+    {
+        "acronym": "TBT",
+        "definition": "Throwback Thursday"
+    },
+    {
+        "acronym": "TFW",
+        "definition": "That face when, that feeling when, that feel when"
+    },
+    {
+        "acronym": "TGIF",
+        "definition": "Thank goodness it’s Friday, thank God it’s Friday"
+    },
+    {
+        "acronym": "Thx",
+        "definition": "Thanks, thank you"
+    },
+    {
+        "acronym": "TIA",
+        "definition": "Thanks in advance"
+    },
+    {
+        "acronym": "TIL",
+        "definition": "Today I learned"
+    },
+    {
+        "acronym": "TMI",
+        "definition": "Too much information"
+    },
+    {
+        "acronym": "TTYL",
+        "definition": "Talk to you later"
+    },
+    {
+        "acronym": "TY",
+        "definition": "Thank you"
+    },
+    {
+        "acronym": "WE, W/E",
+        "definition": "Whatever"
+    },
+    {
+        "acronym": "Wkd",
+        "definition": "Weekend"
+    },
+    {
+        "acronym": "W/O",
+        "definition": "Without"
+    },
+    {
+        "acronym": "YOLO",
+        "definition": "You only live once"
+    },
+    {
+        "acronym": "YT",
+        "definition": "YouTube"
+    },
+    {
+        "acronym": "XOXO",
+        "definition": "Kisses and hugs"
+    },
+    {
+        "acronym": "2",
+        "definition": "to, two, too"
+    },
+    {
+        "acronym": "2nite",
+        "definition": "Tonight"
+    }
+]
