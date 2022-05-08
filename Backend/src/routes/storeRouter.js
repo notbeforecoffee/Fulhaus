@@ -6,13 +6,13 @@ const storeRouter = express.Router();
 
 
 
-storeRouter.get('/', storeController.getAllContent);
+storeRouter.get('/', storeController.getAllProducts);
 
-storeRouter.post ('/', storeController.newContent)
+storeRouter.post ('/', storeController.newProduct)
 
-storeRouter.patch ('/:id', storeController.updateContent)
+storeRouter.patch ('/:id', storeController.updateProduct)
 
-storeRouter.delete ('/:id', storeController.deleteContent)
+storeRouter.delete ('/:id', storeController.deleteProduct)
 
 
 

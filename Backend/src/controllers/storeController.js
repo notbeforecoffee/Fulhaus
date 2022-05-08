@@ -1,24 +1,26 @@
 import dotenv from 'dotenv';
-import Content from '../models/content.js';
+import Products from '../models/content.js';
+import FuzzySearch from 'fuzzy-search'
 
 dotenv.config();
 
-// Insert New Content
-const newContent = async (req, res) => {
+// Insert New Product
+
+const newProduct = async (req, res) => {
   const { acronym, definition } = req.body;
 
   if (!acronym || !definition)
-    return res.status(400).json({ message: 'Content Missing!' });
+    return res.status(400).json({ message: 'Product Info Missing!' });
 
   // Check for duplicate record - requirements TBD
   // For now, it checks the acronym
-  const isExistingContent = await Content.findOne({ acronym }).exec();
-  if (isExistingContent)
-    return res.status(400).json({ message: 'Content already exists!' });
+  const isExistingProduct= await Products.findOne({ acronym }).exec();
+  if (isExistingProduct)
+    return res.status(400).json({ message: 'Product Info Already Exists!' });
 
   try {
-    // Create and store the new content
-    const result = await Content.create({
+    // Create and store the new product
+    const result = await Products.create({
       acronym,
       definition,
     });
@@ -29,66 +31,62 @@ const newContent = async (req, res) => {
   }
 };
 
-// View All Content
-const getAllContent = async (req, res) => {
-  const content = await Content.find();
-  if (!content) return res.status(200).json([]);
-  return res.json(content);
+
+
+// View All Products
+const getAllProducts = async (req, res) => {
+  const products = await Products.find();
+  if (!products) return res.status(200).json([]);
+  return res.json(products);
 };
 
-// View All Content
-// eslint-disable-next-line no-unused-vars
-const getContentByID = async (req, res) => {
-  // TODO
-};
 
-// Delete Requested Content
-const deleteContent = async (req, res) => {
-  const { id: contentId } = req.params;
+// Delete Requested Product
+const deleteProduct = async (req, res) => {
+  const { id: productId } = req.params;
   try {
-    const content = await Content.findOne({ _id: contentId }).exec();
+    const product = await Products.findOne({ _id: productId }).exec();
 
-    if (!content) {
-      return res.status(404).json({ message: 'Requested content does not exist!' });
+    if (!product) {
+      return res.status(404).json({ message: 'Requested Item Does Not Exist!' });
     }
-    await content.deleteOne({ _id: contentId });
+    await product.deleteOne({ _id: productId });
 
-    return res.status(200).json({ success: 'Content Obliterated!' });
+    return res.status(200).json({ success: 'Product Deleted!' });
   } catch (err) {
     if (err.kind === 'ObjectId')
-      return res.status(400).json({ message: 'Invalid Content ID' });
+      return res.status(400).json({ message: 'Invalid Product ID' });
 
     return res.status(500).json({ message: err.message });
   }
 };
 
 // Update Requested Content
-async function updateContent(req, res) {
+async function updateProduct(req, res) {
   const { acronym, definition } = req.body;
-  const { id: contentId } = req.params;
+  const { id: productId } = req.params;
 
   try {
     // Find content then update
-    const result = await Content.findOneAndUpdate(
-      { _id: contentId },
+    const result = await Products.findOneAndUpdate(
+      { _id: productId },
       { $set: { acronym, definition } },
       { new: true }
     );
-    if (!result) return res.status(404).json({ message: 'Content not found!' });
+    if (!result) return res.status(404).json({ message: 'Product Not Found!' });
 
     return res.json(result);
   } catch (err) {
     if (err.kind === 'ObjectId')
-      return res.status(400).json({ message: 'Invalid content id' });
+      return res.status(400).json({ message: 'Invalid Product Id' });
 
     return res.status(500).json({ message: err.message });
   }
 }
 
 export default {
-  newContent,
-  getAllContent,
-  getContentByID,
-  deleteContent,
-  updateContent,
+  newProduct,
+  getAllProducts,
+  deleteProduct,
+  updateProduct,
 };

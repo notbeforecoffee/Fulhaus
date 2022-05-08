@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 
 const {Schema} = mongoose;
 
-const contentSchema = new Schema({
-    acronym: {type: String},
-    definition: {type: String}, 
+const productSchema = new Schema({
+    acronym: {type: String, required: true},
+    definition: {type: String, required: true}, 
 });
 
-export default mongoose.model('Content', contentSchema);
+export default mongoose.model('Products', productSchema);
