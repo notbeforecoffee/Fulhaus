@@ -1,5 +1,5 @@
-import Home from './pages/Home.jsx'
-import Store from './pages/Store.jsx'
+import Home from './pages/home/Home.jsx'
+import Store from './pages/store/Store.jsx'
 import './App.css';
 
 

@@ -1,0 +1,15 @@
+
+.background-img {
+    height: 64vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f7efe7;
+  }
+  
+  .chair {
+    max-width: 1388px;
+    width: 100%;
+    height: 100%;
+  }

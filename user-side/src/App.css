@@ -15,38 +15,6 @@ body {
   ;
 }
 
-/* .Sections{
- 
-  height: calc(100vh - 6vh);
-  scroll-snap-type: y mandatory; 
-   scrollbar-width: none; 
-   overflow-y: scroll;
-} */
-
-/* home page styling */
-
-/* splash page styling */
-.background-img {
-  height: 64vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: #f7efe7;
-}
-
-.chair {
-  max-width: 1388px;
-  width: 100%;
-  height: 100%;
-}
-
-/* store Styling */
-
-.Store {
-  height: 94vh;
-  background-color: #f7efe7;
-}
 
 @media screen and (max-width: 859px) {
   .container {
