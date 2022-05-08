@@ -18,7 +18,19 @@
   overflow: hidden;
 }
 
+.store_items {
+  display: flex;
+  flex-direction:column;
+  margin: 0 2rem;
+}
+ 
 
+.totalsContainer {
+  display:flex;
+ justify-content: space-between;
+ margin: 0 2rem;
+
+}
 
 
 .checkout_btn {
@@ -35,6 +47,7 @@
   color: #fff;
   border: 0;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 

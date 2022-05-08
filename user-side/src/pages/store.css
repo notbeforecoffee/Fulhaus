@@ -1,93 +1,12 @@
-.grid {
-    column-count: 3;
-    column-gap: 0px;
-    margin: auto;
-    position: relative;
-  }
-  
-  .grid img {
-    max-width: 100%;
-  }
-  
-  .overlay-base {
-    position: relative;
-    cursor: pointer;
-    margin-right: 2vmin;
-    margin-bottom: 2vmin;
-  } 
-  
-  
-  
-  #lightbox {
-    cursor: pointer;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    background-color:rgba(0,0,0,0);
-    z-index: 1;
-  }
-  
-  #lightbox h1 .heart {
-    padding-right: 10px;
-    color: rgb(127, 188, 196);
-    margin: 0px;
-    text-align: right;
-  }
-  
-  #lightbox .imageBorder .close {
-    font-size: calc(7px + 1vmin);
-    color: rgb(127, 188, 196);
-    margin: 0px;
-    text-align: right;
-  }
-  
-  #lightbox  img {
-    min-height: 50vh;
-    max-height: 70vh;
-    border-radius: 30px;
-  }
-  
-  .imageBorder {
-    padding: 15px;
-    background-color: rgba(43, 47, 48, 0.9);
-    border-radius: 40px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  
-  
-  .triangle-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to top left, 
-      rgba(255, 255, 255, .1) 0%, 
-      rgba(255, 255, 255, .15) 50%,
-      rgba(255, 255, 255, .4) 50%
-      );
-  }
-  
-  
-  .img {
-    display: block;
-  }
-  
-  .imgTitle {
-    font-weight: bold;
-    font-family: 'Open Sans';
-    margin: 15px 0px 0px 15px;
-    align-content: left;
-  }
-  
-  .imgDescription {
-   font-weight: 500; 
-   max-width: 50%;
-   margin-left: 15px;
-  }
-  
+.shopBorder {
+  /* border: 2px solid #000; */
+  width: 1386px;
+}
+
+.Store {
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  max-width: 1386px;
+  margin: auto;
+  scroll-snap-align: start;
+}

@@ -9,6 +9,12 @@ const SideDrawer = (props) => {
 
      <nav className={`sideDrawer ${props.name}`}>
         <div className="store_items">items go here</div>
+
+        <div className="totalsContainer">
+        <div className="total">Total</div>
+        <div className="subTotal">TBD</div>
+        </div>
+       
         <div className='checkout_btn'>
         <button >
             Checkout

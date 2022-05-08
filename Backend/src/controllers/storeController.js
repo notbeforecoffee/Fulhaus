@@ -12,8 +12,7 @@ const newProduct = async (req, res) => {
   if (!acronym || !definition)
     return res.status(400).json({ message: 'Product Info Missing!' });
 
-  // Check for duplicate record - requirements TBD
-  // For now, it checks the acronym
+  // Check for duplicate record 
   const isExistingProduct= await Products.findOne({ acronym }).exec();
   if (isExistingProduct)
     return res.status(400).json({ message: 'Product Info Already Exists!' });
@@ -39,6 +38,36 @@ const getAllProducts = async (req, res) => {
   if (!products) return res.status(200).json([]);
   return res.json(products);
 };
+
+
+//impliments fuzzy search via params
+const searchProducts = async (req, res) => {
+ const { page, limit, search } =  req.query
+  
+const allProducts = await Products.find()
+const foundItems = new FuzzySearch (allProducts, ['definition', 'acronym'],  {
+  caseSensitive: false,
+})
+const results = foundItems.search(search)
+const numResults = results.length 
+if (!numResults) return res.status(404).json({message: 'No Results Found'})
+const numPages = (Math.ceil(numResults / limit))
+if (page > numPages) {
+  return res.status(400).json({message: 'Page Number Not Found'})
+}
+console.log(numResults/limit)
+console.log(numResults)
+//filters results based on number of results to display 
+const resultStartNum = (page - 1) * limit + 1
+// return res.json(resultStartNum)
+return res.json((page *  limit - numResults) > numResults)
+
+
+return res.json(results.slice(resultStartNum, resultStartNum + 10))
+
+
+return res.status(200).json(results)
+}
 
 
 // Delete Requested Product
@@ -87,6 +116,7 @@ async function updateProduct(req, res) {
 export default {
   newProduct,
   getAllProducts,
+  searchProducts,
   deleteProduct,
   updateProduct,
 };

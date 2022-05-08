@@ -3,9 +3,7 @@ import "./store.css";
 // import ReactPaginate from 'react-paginate'
 
 function Store() {
-
   const [content, setContent] = useState("fückyou");
-  
 
   useEffect(() => {
     const getProducts = async () => {
@@ -16,25 +14,35 @@ function Store() {
         }
       );
       const products = await response.json();
-      setContent(JSON.stringify(products.data.products));
-      // content = products.data.products
-      // console.log(products.data.products);
+      // setContent(JSON.stringify(products.data.products));
+      setContent(products.data.products);
     };
     getProducts();
-    // console.log(content)
   }, []);
+
+  // function RenderProducts() {
+  //   const items = content.read();
+  //   return (
+  //     <ul key={content._id}>
+  //       {content.map((product) => (
+  //         <li>{JSON.stringify(product)}</li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
 
   return (
     <div className="Store" id="Store">
+     
       <div>
-        {/* <h1>{JSON.stringify(content[0].fulhausProductName)}</h1> */}
-        {/* {setContent(JSON.parse(content))} */}
-        {/* <h1>{typeof(content)}</h1> */}
-        {/* <h1>{JSON.stringify(content[0].fulhausProductName)}</h1> */}
-        {content}
-      </div>
-
-      <div>
+        {/* {content} */}
+        {/* {console.log(content)}
+        <ul key={content._id}>
+        {content.map((product) => (
+          <li>{JSON.stringify(product)}</li>
+        ))}
+      </ul> */}
+        {/* {console.log(JSON.stringify(content))}
         {content.length > 0 &&
           content.map((product) => (
             <div key={content._id}>
@@ -42,18 +50,10 @@ function Store() {
                 <li>{product}</li>
                 </ul>
             </div>
-          ))}
-      </div>
+          ))} */}
 
-      {/* <div>
-        {content.map((product) => {
-          return (
-            <div>
-              <img src={product.imageURLs} />
-              </div>
-          )
-        })}
-      </div> */}
+      </div>
+  
     </div>
   );
 }

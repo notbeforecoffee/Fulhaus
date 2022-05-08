@@ -3,6 +3,19 @@
     height: 6vh;
     width: 100%;
     display: flex;
+    background-color: #f7efe7;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    position: fixed;
+    top:0;
+  }
+
+  .headerContainer {
+    height: 6vh;
+    width: 100%;
+    max-width: 1500px; 
+    display: flex;
     background-color: #fff;
     justify-content: center;
     align-items: center;
@@ -15,17 +28,19 @@
   }
   .Fulhaus {
     font-family: 'Manrope';
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
+    padding: 0px 58px;
   }
   
   .cart_btn {
     margin-left: auto;
     background-color: #000;
     color: white;
+    margin-right: 58px;
     font-size: 1.2rem;
     width: 5rem;
     height: 4vh;
-    margin-right: 2rem;
     border-radius: 0.2rem;
     border: 0;
+    cursor: pointer;
   }

@@ -1,31 +1,29 @@
-/* :root {
-  --bg: #242526;
-  --bg-accent: #484a4d;
-  --text-color: #dadce1;
-  --nav-size: 60px;
-  --border: 1px solid #474a4d;
-  --border-radius: 8px;
-  --speed: 500ms;
-  } */
-
-
-  body {
-    margin-top: 6vh;
-    font-family: 'Maven Pro';
-  }
+body {
+  margin-top: 6vh;
+  font-family: "Maven Pro";
+  background-color: #f7efe7;
+  overflow-x:hidden;
+  
+}
 
 .container {
   height: 94vh;
   display: flex;
+  background-color: #f7efe7;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none; /*for firefox*/
+  align-items: center;
+  ;
 }
 
+/* .Sections{
+ 
+  height: calc(100vh - 6vh);
+  scroll-snap-type: y mandatory; 
+   scrollbar-width: none; 
+   overflow-y: scroll;
+} */
+
 /* home page styling */
-
-
-
 
 /* splash page styling */
 .background-img {
@@ -35,8 +33,12 @@
   justify-content: center;
   width: 100%;
   background-color: #f7efe7;
-  /* position:relative;
-  top: 6vh; */
+}
+
+.chair {
+  max-width: 1388px;
+  width: 100%;
+  height: 100%;
 }
 
 /* store Styling */
@@ -46,3 +48,8 @@
   background-color: #f7efe7;
 }
 
+@media screen and (max-width: 859px) {
+  .container {
+    width: 100%;
+  }
+}

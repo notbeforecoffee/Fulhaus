@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import Store from './Store'
+import Store from "./Store";
+import Chair from "../assets/chair.png";
 // import Toolbar from "../testComponents/Toolbar";
 // import SideDrawer from "../testComponents/sideDrawer/SideDrawer";
 // import Backdrop from "../testComponents/backdrop/Backdrop";
@@ -11,10 +12,12 @@ const Home = () => {
     <div>
       <div className="container">
         <Header />
-        <div className="background-img">picture goes here</div>
+        <div className="background-img">
+          <img className='chair' src={Chair} />
+        </div>
         <Footer />
       </div>
-      <Store />
+      {/* <Store /> */}
     </div>
   );
 };
