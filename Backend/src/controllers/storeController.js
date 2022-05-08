@@ -49,24 +49,21 @@ const foundItems = new FuzzySearch (allProducts, ['definition', 'acronym'],  {
   caseSensitive: false,
 })
 const results = foundItems.search(search)
+
+//filters results based on page param and limit param
 const numResults = results.length 
 if (!numResults) return res.status(404).json({message: 'No Results Found'})
 const numPages = (Math.ceil(numResults / limit))
 if (page > numPages) {
   return res.status(400).json({message: 'Page Number Not Found'})
 }
-console.log(numResults/limit)
-console.log(numResults)
-//filters results based on number of results to display 
-const resultStartNum = (page - 1) * limit + 1
-// return res.json(resultStartNum)
-return res.json((page *  limit - numResults) > numResults)
 
+const resultStartNum = (page - 1) * limit
+if ((page * limit - numResults) > 0)
+return res.json(results.slice(resultStartNum, resultStartNum + numResults % limit))
 
 return res.json(results.slice(resultStartNum, resultStartNum + 10))
 
-
-return res.status(200).json(results)
 }
 
 
